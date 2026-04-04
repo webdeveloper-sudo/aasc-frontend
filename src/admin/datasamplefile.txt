@@ -1,0 +1,545 @@
+{
+  "collection_samples": {
+    
+    "//": "============================================================",
+    "//": "HOME MODULE COLLECTIONS",
+    "//": "============================================================",
+    
+    "home__recruitersdata": {
+      "_id": "69311205a47373a3d14a6dd8",
+      "_sourceFile": "home\\recruitersdata.ts",
+      "exportName": "recruitersData",
+      "importedAt": "2025-12-04T04:45:57.434Z",
+      "data": {
+        "title": "Our Recruiters",
+        "logos": [
+          "1-1.png", "2-1.png", "3-1.png", "4-1.png", "10-1.png",
+          "11-1.png", "12-1.png", "13-1.png", "14-1.png", "15-1.png"
+        ]
+      }
+    },
+
+    "home__testimonialdata": {
+      "_id": "69311205a47373a3d14a6dd4",
+      "_sourceFile": "home\\testimonialdata.ts",
+      "exportName": "testimonialsData",
+      "importedAt": "2025-12-04T04:45:57.225Z",
+      "data": {
+        "title": "Testimonials",
+        "videos": [
+          "https://www.youtube.com/embed/DCS3cdSSXdM",
+          "https://youtu.be/si-MknERvy4",
+          "https://www.youtube.com/embed/jrtTtCIVOCw"
+        ]
+      }
+    },
+
+    "home__welcomedata": {
+      "_id": "69311205a47373a3d14a6dd0",
+      "_sourceFile": "home\\welcomedata.ts",
+      "exportName": "welcomeData",
+      "importedAt": "2025-12-04T04:45:57.073Z",
+      "data": {
+        "title": "Welcome to Achariya Arts and Science College",
+        "description": "Achariya Arts and Science College, Puducherry, is one of the premier institutions..."
+      }
+    },
+
+    "home__achievementsstatsdata": {
+      "_id": "69311208a47373a3d14a6dfa",
+      "_sourceFile": "home\\achievementsstatsdata.ts",
+      "exportName": "statsData",
+      "importedAt": "2025-12-04T04:46:00.468Z",
+      "data": {
+        "items": [
+          {
+            "label": "Placements So Far",
+            "icons": "medal.png",
+            "startValue": 4743,
+            "endValue": 4754,
+            "suffix": "+"
+          },
+          {
+            "label": "National Placements",
+            "icons": "graduate.png",
+            "startValue": 0,
+            "endValue": 60,
+            "suffix": "+"
+          }
+        ]
+      }
+    },
+
+    "home__admissionsdata": {
+      "_id": "69311207a47373a3d14a6df6",
+      "_sourceFile": "home\\admissionsdata.ts",
+      "exportName": "admissionData",
+      "importedAt": "2025-12-04T04:45:59.935Z",
+      "data": {
+        "title": "For Admission",
+        "formTitle": "Admission Enquiry Form",
+        "paragraphs": [
+          "Begin your academic journey with Achariya Arts and Science College..."
+        ]
+      }
+    },
+
+    "home__allhomedata": {
+      "_id": "69311207a47373a3d14a6df2",
+      "_sourceFile": "home\\allhomedata.ts",
+      "exportName": "homeData",
+      "importedAt": "2025-12-04T04:45:59.655Z",
+      "data": {
+        "welcome": "welcomedata",
+        "leadership": { "leads": "OurLeads.js" },
+        "stats": "achievementsstatsdata",
+        "campus": "ourcampusdata",
+        "missionVision": "missionvissiondata"
+      }
+    },
+
+    "home__announcementsdata": {
+      "_id": "69311207a47373a3d14a6df0",
+      "_sourceFile": "home\\announcementsdata.ts",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:59.548Z",
+      "data": null
+    },
+
+    "home__carouseldata": {
+      "_id": "69311207a47373a3d14a6dec",
+      "_sourceFile": "home\\carouseldata.ts",
+      "exportName": "carouselData",
+      "importedAt": "2025-12-04T04:45:59.265Z",
+      "data": {
+        "images": [
+          "Untitled-2480-x-909-px-2048x908.png",
+          "12-2048x908.jpg",
+          "20-2048x908.png"
+        ]
+      }
+    },
+
+    "home__circularpreviewdata": {
+      "_id": "693111f3a47373a3d14a6d5a",
+      "title": "Admission Circular 2025 Released",
+      "path": "/circulars/admission-2025",
+      "file": "/pdf/circulars/admission-2025.pdf",
+      "description": "Details regarding admission procedures...",
+      "date": "2025-01-10",
+      "postedBy": "Academic Office",
+      "__origin_export": "CircularPreviewData",
+      "__origin_file": "home\\CircularPreviewData.js"
+    },
+
+    "home__missionvisiondata": {
+      "_id": "69311206a47373a3d14a6de8",
+      "_sourceFile": "home\\missionvissiondata.ts",
+      "exportName": "missionVisionData",
+      "importedAt": "2025-12-04T04:45:58.779Z",
+      "data": {
+        "mission": {
+          "title": "Our Mission",
+          "description": "Achariya Arts and Science College, Puducherry..."
+        },
+        "vision": {
+          "title": "Our Vision",
+          "description": "Achariya Arts and Science College, Puducherry..."
+        },
+        "image": "md.png",
+        "videoUrl": "https://player.vimeo.com/video/996958609",
+        "ctaText": "For Admissions",
+        "ctaLink": "#contact"
+      }
+    },
+
+    "home__newstickerdata": {
+      "_id": "69311206a47373a3d14a6de4",
+      "_sourceFile": "home\\newstickerdata.ts",
+      "exportName": "newsTickerData",
+      "importedAt": "2025-12-04T04:45:58.368Z",
+      "data": {
+        "items": [
+          "UG Courses: B.A., Lil Tamil, B.A., English...",
+          "PG Courses: M.A., English., M.Sc., Maths...",
+          "For Admission Details Contact: +91 94422 44168 / 94422 55861"
+        ]
+      }
+    },
+
+    "home__ourcampusdata": {
+      "_id": "69311205a47373a3d14a6de0",
+      "_sourceFile": "home\\ourcampusdata.ts",
+      "exportName": "campusData",
+      "importedAt": "2025-12-04T04:45:57.960Z",
+      "data": {
+        "title": "Our Campus",
+        "image": "aasc_building.png",
+        "videoUrl": "https://player.vimeo.com/video/996960549",
+        "paragraphs": [
+          "Achariya Arts and Science College, Puducherry..."
+        ]
+      }
+    },
+
+    "home__ourleads": {
+      "_id": "693111f3a47373a3d14a6d55",
+      "role": "Chief Mentor",
+      "img": null,
+      "path": "/about/chief-mentors-desk",
+      "name": null,
+      "__origin_export": "OurLeads",
+      "__origin_file": "home\\OurLeads.js"
+    },
+
+    "home__ourschoolscollegesdata": {
+      "_id": "69311205a47373a3d14a6ddc",
+      "_sourceFile": "home\\ourschoolscollegesdata.ts",
+      "exportName": "schoolsAndCollegesData",
+      "importedAt": "2025-12-04T04:45:57.568Z",
+      "data": {
+        "title": "Our Schools And Colleges",
+        "logos": [
+          "aasc-1-removebg-preview.png",
+          "absm-removebg-preview.png",
+          "acchm-300x113-removebg-preview.png"
+        ]
+      }
+    },
+
+    "//": "============================================================",
+    "//": "ABOUT MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "about__chiefmentordata": {
+      "_id": "69311209a47373a3d14a6e0a",
+      "_sourceFile": "about\\chiefmentordata.ts",
+      "exportName": "chiefMentorData",
+      "importedAt": "2025-12-04T04:46:01.085Z",
+      "data": {
+        "banner": {
+          "title": "Cheif Mentor's Desk",
+          "image": "aasc_building.webp"
+        },
+        "content": {
+          "title": "Our Cheif Mentor's Desk",
+          "ourleadsimage": "Dr. J. arawindhan.webp",
+          "cheifmentordeskimage": "chief-mentor.webp",
+          "paragraphs": [
+            "I have travelled to many destinations...",
+            "Dear parents, choose ACHARIYA..."
+          ],
+          "signOff": {
+            "text": "With best wishes,",
+            "name": "Dr. J. Arawindhan",
+            "title": "Chief Mentor"
+          }
+        }
+      },
+      "updatedAt": "2025-12-04T05:41:58.248Z"
+    },
+
+    "about__governingbodycouncildata": {
+      "_id": "69311208a47373a3d14a6e03",
+      "id": 2,
+      "image": "17122.webp",
+      "name": "Smt. A. Vinothini",
+      "department": "Trustee, Achariya Group of Educational Institutions",
+      "designation": "Member",
+      "phone": "+91 94422 44168",
+      "email": "info@achariya.in",
+      "__origin_export": "governingBodyMembersData",
+      "__origin_file": "about\\governingbodycouncildata.ts"
+    },
+
+    "about__ourteamdata": {
+      "_id": "69311204a47373a3d14a6dce",
+      "_sourceFile": "about\\OurTeamData.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:56.702Z",
+      "data": null
+    },
+
+    "about__pressreleasesdata": {
+      "_id": "69311204a47373a3d14a6dcc",
+      "_sourceFile": "about\\PressReleasesData.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:56.490Z",
+      "data": null
+    },
+
+    "about__principaldata": {
+      "_id": "69311208a47373a3d14a6e00",
+      "_sourceFile": "about\\principaldata.ts",
+      "exportName": "principalData",
+      "importedAt": "2025-12-04T04:46:00.725Z",
+      "data": {
+        "banner": {
+          "title": "Principal's Desk",
+          "image": "aasc_building.png"
+        },
+        "content": {
+          "title": "Our Principal's Desk",
+          "image": "principal-ushadevi.jpeg",
+          "email": "aaschead@achariya.org",
+          "paragraphs": [
+            "ACHARIYA Arts and Science College, throughout its glorious history..."
+          ],
+          "signOff": {
+            "text": "With best wishes,",
+            "name": "Dr. R. Ushadevi",
+            "title": "Principal"
+          }
+        }
+      }
+    },
+
+    "about__profileofcollegedata": {
+      "_id": "69311208a47373a3d14a6dfe",
+      "_sourceFile": "about\\profileofcollegedata.ts",
+      "exportName": "profileOfCollegeData",
+      "importedAt": "2025-12-04T04:46:00.620Z",
+      "data": {
+        "banner": {
+          "title": "Profile Of The College",
+          "image": "aasc_building.webp"
+        },
+        "header": {
+          "logo": "AASC-Logo.png",
+          "title": "Achariya Arts and Science College",
+          "description": "Achariya Arts and Science College, Puducherry..."
+        },
+        "details": [
+          {
+            "title": "Type of College",
+            "icon": "lucide-react",
+            "items": [{ "label": "Type", "value": "Co-education" }]
+          },
+          {
+            "title": "Financial Category",
+            "icon": "lucide-react",
+            "items": [{ "label": "Category", "value": "Self-Financing" }]
+          }
+        ]
+      }
+    },
+
+    "//": "============================================================",
+    "//": "ACADEMICS MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "academics__academiccalendardata": {
+      "_id": "69311204a47373a3d14a6dca",
+      "_sourceFile": "academics\\academiccalendardata.js",
+      "exportName": "academicCalendarData",
+      "importedAt": "2025-12-04T04:45:56.236Z",
+      "data": {
+        "semesterTitle": "ODD Semester 2024–2025",
+        "pdfLink": "2024-ODD-SEM-CALENDAR-office.pdf",
+        "flipbook": {
+          "enabled": true,
+          "note": "Academic Calendar Flipbook Viewer"
+        },
+        "meta": {
+          "updatedOn": "2025-01-10",
+          "uploadedBy": "AASC Admin"
+        }
+      }
+    },
+
+    "academics__departmentsdata": {
+      "_id": "693111fda47373a3d14a6daf",
+      "id": "history",
+      "title": "History",
+      "url": "/academics/departments/history",
+      "__origin_export": "departmentsSidebarMenu",
+      "__origin_file": "academics\\departmentsdata.js"
+    },
+
+    "academics__pgprogrammsdetails": {
+      "_id": "693111fca47373a3d14a6dad",
+      "_sourceFile": "academics\\pgprogrammsdetails.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:48.220Z",
+      "data": null
+    },
+
+    "academics__prospectusdata": {
+      "_id": "693111fba47373a3d14a6daa",
+      "year": "2019 - 2020",
+      "doc": "Final-Art-Science-Prospectus_DEC-2019-2020-compressed.pdf",
+      "__origin_export": "prospectusData",
+      "__origin_file": "academics\\prospectusdata.js"
+    },
+
+    "academics__ugprogramsdatadetails": {
+      "_id": "693111f9a47373a3d14a6da8",
+      "_sourceFile": "academics\\ugprogramsdatadetails.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:45.941Z",
+      "data": null
+    },
+
+    "academics__valueaddedcoursesdata": {
+      "_id": "693111f9a47373a3d14a6da6",
+      "_sourceFile": "academics\\ValueAddedCoursesData.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:45.363Z",
+      "data": {
+        "AdditionalCoursesData": null,
+        "AdditionalCoursesDataGeneralIncharge": null
+      }
+    },
+
+    "//": "============================================================",
+    "//": "CAMPUS LIFE MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "campus-life__seeddata": {
+      "_id": "693111f8a47373a3d14a6da0",
+      "id": 1,
+      "image": "aasc_building.webp",
+      "text": "School for Entrepreneurial and Employability Skill Development...",
+      "__origin_export": "seedData",
+      "__origin_file": "campus-life\\seeddata.js"
+    },
+
+    "//": "============================================================",
+    "//": "COMMITTEES MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "commitees__committiesdata": {
+      "_id": "693111f3a47373a3d14a6d70",
+      "_sourceFile": "commitees\\committiesdata.js",
+      "exportName": "academicCouncilCommittee",
+      "importedAt": "2025-12-04T04:45:39.941Z",
+      "data": {
+        "members": [
+          {
+            "id": 1,
+            "name": "Dr. Janarthanan",
+            "designation": "Vice Principal",
+            "email": "janajien@gmail.com",
+            "image": "17122.webp"
+          }
+        ],
+        "circulars": [
+          {
+            "title": "Academic Council Committee - 20 Nov 2025",
+            "file": "Achariya-Arts-and-Science-College20250108.pdf"
+          }
+        ],
+        "objectives": [
+          {
+            "id": 1,
+            "text": "To formulate and review academic policies..."
+          }
+        ]
+      }
+    },
+
+    "//": "============================================================",
+    "//": "CONTACT MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "contact__contactdata": {
+      "_id": "693111f3a47373a3d14a6d68",
+      "_sourceFile": "contact\\contactdata.js",
+      "exportName": "socialLinks",
+      "importedAt": "2025-12-04T04:45:39.537Z",
+      "data": {
+        "facebook": {
+          "label": "Facebook",
+          "path": "https://www.facebook.com/AchariyaAASC/"
+        },
+        "instagram": {
+          "label": "Instagram",
+          "path": "https://www.instagram.com/achariya_arts_and_science"
+        },
+        "youtube": {
+          "label": "YouTube",
+          "path": "https://www.youtube.com/@ACHARIYA.ArtsandScience"
+        }
+      }
+    },
+
+    "//": "============================================================",
+    "//": "EVENTS MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "events__eventsdata": {
+      "_id": "693111f3a47373a3d14a6d66",
+      "_sourceFile": "events\\eventsdata.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:39.463Z",
+      "data": null
+    },
+
+    "events__upcommingeventspreviewdata": {
+      "_id": "693111f3a47373a3d14a6d60",
+      "title": "Annual Sports Day - Dec 2025",
+      "path": "/events/sports-day-2025",
+      "date": "2025-12-18",
+      "description": "Our Annual Sports Day will feature track events...",
+      "image": "aasc_building.webp",
+      "postedBy": "Physical Education Department",
+      "file": "/pdf/events/sports-day-schedule.pdf",
+      "__origin_export": "UpcommingEventsPreviewData",
+      "__origin_file": "events\\UpcommingEventsPreviewData.js"
+    },
+
+    "//": "============================================================",
+    "//": "IQAC MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "iqac__nirfdata": {
+      "_id": "693111f3a47373a3d14a6d4e",
+      "id": 1,
+      "text": "The National Institutional Ranking Framework...",
+      "__origin_export": "nirfInfo",
+      "__origin_file": "iqac\\nirfdata.js"
+    },
+
+    "//": "============================================================",
+    "//": "PLACEMENTS MODULE COLLECTIONS",
+    "//": "============================================================",
+
+    "placements__placementrecords": {
+      "_id": "693111f2a47373a3d14a6d3f",
+      "label": "2019 - 2020",
+      "file": "RECORDS-2019-2020.pdf",
+      "__origin_export": "placementRecords",
+      "__origin_file": "placdements\\PlacementRecords.js"
+    },
+
+    "placements__trainingandplacementsdata": {
+      "_id": "693111f2a47373a3d14a6d3d",
+      "_sourceFile": "placdements\\TrainingAndPlacementsData.js",
+      "exportName": "default",
+      "importedAt": "2025-12-04T04:45:38.899Z",
+      "data": {
+        "TrainingAndPlacementsFacultyData": null,
+        "activities": null
+      }
+    },
+
+    "//": "============================================================",
+    "//": "USERS COLLECTION",
+    "//": "============================================================",
+
+    "users": {
+      "_id": "69311209a47373a3d14a6e0b",
+      "name": "System Administrator",
+      "email": "admin@achariya.org",
+      "password": "$2a$10$pKA25t45d0DuvDnLEDHSiev3fdHOyCJqciflX8pfgr7T4F0NE5J0q",
+      "role": "admin",
+      "isActive": true,
+      "lastLogin": "2025-12-04T09:04:48.199Z",
+      "profileImage": null,
+      "createdBy": null,
+      "createdAt": "2025-12-04T04:46:01.218Z",
+      "updatedAt": "2025-12-04T09:04:48.205Z",
+      "__v": 0
+    }
+  }
+}
