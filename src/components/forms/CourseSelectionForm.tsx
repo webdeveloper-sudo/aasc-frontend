@@ -24,7 +24,7 @@ import {
 import HeadingUnderline from "../reusable/HeadingUnderline";
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwywXDxRMeySa1-nOu1ZqTYW0oMzcKjkEDGrcdgX2_Tl3P1w2FJJ_p94jgWc5ysQZQ/exec";
+  "https://script.google.com/macros/s/AKfycbwD5Yno522kTok2SnDibHATHTrL8d4lPownZJFuMLm0YSZ1HUnpbK4vAukqRiVsR_D9/exec";
 
 interface CourseSelectionFormProps {
   course?: string;
