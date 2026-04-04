@@ -1,23 +1,48 @@
-name: Deploy to Namecheap via FTP
+name: Frontend CI
 
 on:
   push:
-    branches:
-      - main   # change if your branch is different
+    branches: [main]
+    paths: 
+      - 'client/**'
+      - '.github/workflows/deploy.yml'
+  pull_request: 
+    branches: [main]
+    paths: 
+      - 'client/**'
+      - '.github/workflows/deploy.yml'
+
+
 
 jobs:
-  ftp-deploy:
+  test-and-build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: client/package-lock.json
+      - name: Install dependencies
+        working-directory: ./client
+        run: npm install --legacy-peer-deps
+      - name: Run Vitest Tests
+        working-directory: ./client
+        run: npm test -- --run # '--run' makes sure it doesn't stay in "watch" mode
+      - name: Build Project
+        working-directory: ./client
+        run: npm run build
 
-      - name: Deploy to Server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: 🚀 Deploy to Namecheap
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /public_html/
+          server-dir: ./
+          port: 21
+          timeout: 90000
