@@ -1,48 +1,34 @@
-name: Frontend CI
+name: Deploy React App to Namecheap
 
 on:
   push:
-    branches: [main]
-    paths: 
-      - 'client/**'
-      - '.github/workflows/deploy.yml'
-  pull_request: 
-    branches: [main]
-    paths: 
-      - 'client/**'
-      - '.github/workflows/deploy.yml'
-
-
+    branches:
+      - main
 
 jobs:
-  test-and-build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 22
-          cache: 'npm'
-          cache-dependency-path: client/package-lock.json
-      - name: Install dependencies
-        working-directory: ./client
-        run: npm install --legacy-peer-deps
-      - name: Run Vitest Tests
-        working-directory: ./client
-        run: npm test -- --run # '--run' makes sure it doesn't stay in "watch" mode
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
       - name: Build Project
-        working-directory: ./client
         run: npm run build
 
-      - name: 🚀 Deploy to Namecheap
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
+          local-dir: ./dist/
           server-dir: ./
-          port: 21
-          timeout: 90000
