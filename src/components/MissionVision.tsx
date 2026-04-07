@@ -42,7 +42,7 @@ const MissionVision: React.FC<MissionVisionProps> = ({ overrideData }) => {
   console.log('MissionVision data flow:', { overrideData, staticData, safeData, thumbnailUrl });
 
   return (
-    <section className="bg-background px-4 md:px-0">
+    <section className=" px-4 md:px-0">
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <div className="md:w-1/2 text-center md:text-left">
           <Heading title={safeData.mission.title} size="lg" align="left" />

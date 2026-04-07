@@ -57,7 +57,7 @@ const OurRecruiters: React.FC<OurRecruitersProps> = ({ overrideData }) => {
   ];
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full">
 
       {/* FIRST BLOCK: Smooth Infinite Marquee CSS */}
       <style>{`

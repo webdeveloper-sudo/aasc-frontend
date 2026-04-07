@@ -45,7 +45,7 @@ const AchariyaSchoolsAndColleges: React.FC<
   );
 
   return (
-    <section className="w-full py-12 bg-white">
+    <section className="w-full py-12 ">
       <Heading title={sourceData.title} size="lg" align="center" />
       <HeadingUnderline width={200} align="center" />
 

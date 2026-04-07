@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, Play, X } from "lucide-react";
 import campus from "@/assets/images/aasc_building.webp";
-import trainingandplacementsimg1 from "@/assets/images/training-and-placements/training-and-placementimg1.webp"
+import trainingandplacementsimg1 from "@/assets/images/training-and-placements/training-and-placementimg1.webp";
 import { Head } from "react-day-picker";
 import HeadingUnderline from "@/components/reusable/HeadingUnderline";
 import BannerAndBreadCrumb from "@/components/BannerAndBreadCrumb";
@@ -73,7 +73,7 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
   }
 
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
-    null
+    null,
   );
 
   const openPopup = (index: number) => {
@@ -87,7 +87,7 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
   const nextImage = () => {
     if (selectedImageIndex !== null) {
       setSelectedImageIndex((prev) =>
-        prev === null ? null : (prev + 1) % supportImages.length
+        prev === null ? null : (prev + 1) % supportImages.length,
       );
     }
   };
@@ -97,7 +97,7 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
       setSelectedImageIndex((prev) =>
         prev === null
           ? null
-          : (prev - 1 + supportImages.length) % supportImages.length
+          : (prev - 1 + supportImages.length) % supportImages.length,
       );
     }
   };
@@ -235,7 +235,7 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
             )}
           </AnimatePresence>
         </section> */}
-        <section className="bg-background py-10">
+        <section className="py-10">
           <div className="flex flex-col md:flex-row gap-10">
             {/* 🏫 Content Section */}
             <div className="md:w-1/2 text-center md:text-left space-y-5">
@@ -257,7 +257,10 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
               </div>
               <ul className="space-y-3 ">
                 {activities.map((item) => (
-                  <li key={item.id} className="flex gap-3 text-justify text-left">
+                  <li
+                    key={item.id}
+                    className="flex gap-3 text-justify text-left"
+                  >
                     <div className="w-5 h-5 flex items-start justify-center pt-1">
                       <GraduationCap className="w-4 h-4 text-purple-700" />
                     </div>
@@ -328,16 +331,15 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
         </section>
       </div>
       <ImagePopup
-  images={supportImages.map((img) => ({
-    image: isPreview ? resolveImageUrl(img) : img,
-    imgTitle: "",
-  }))}
-  selectedIndex={selectedImageIndex}
-  onClose={closePopup}
-  onNext={nextImage}
-  onPrev={prevImage}
-/>
-
+        images={supportImages.map((img) => ({
+          image: isPreview ? resolveImageUrl(img) : img,
+          imgTitle: "",
+        }))}
+        selectedIndex={selectedImageIndex}
+        onClose={closePopup}
+        onNext={nextImage}
+        onPrev={prevImage}
+      />
     </>
   );
 };

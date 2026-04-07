@@ -54,7 +54,7 @@ const CourseSelectionForm: React.FC<CourseSelectionFormProps> = ({
   // Auto-select default course when prop changes
   useEffect(() => {
     if (defaultCourse && defaultCourse !== formData.course) {
-      setFormData(prev => ({ ...prev, course: defaultCourse }));
+      setFormData((prev) => ({ ...prev, course: defaultCourse }));
     }
   }, [defaultCourse]);
 
@@ -76,7 +76,7 @@ const CourseSelectionForm: React.FC<CourseSelectionFormProps> = ({
 
   const handleNameInput = (
     e: React.ChangeEvent<HTMLInputElement>,
-    field: string
+    field: string,
   ) => {
     const value = e.target.value.replace(/[^a-zA-Z ]/g, "");
     setFormData({ ...formData, [field]: value });
@@ -103,7 +103,7 @@ const CourseSelectionForm: React.FC<CourseSelectionFormProps> = ({
 
       setShowSuccess(true);
       formRef.current?.reset();
-      
+
       // 🚀 AUTO CLOSE MODAL AFTER SUCCESS (3 seconds)
       setTimeout(() => {
         onClose(); // Close the entire modal
@@ -128,13 +128,19 @@ const CourseSelectionForm: React.FC<CourseSelectionFormProps> = ({
 
       {/* Form Container */}
       <div className="w-[420px] max-w-full bg-white backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 p-8 animate-bounceIn max-h-[90vh] overflow-y-auto">
-        <h3 className="text-center font-semibold text-xl">Apply for {defaultCourse || formData.course}</h3>
-        <HeadingUnderline width={100}/>
+        <h3 className="text-center font-semibold text-xl">
+          Apply for {defaultCourse || formData.course}
+        </h3>
+        <HeadingUnderline width={100} />
 
         <p className="mb-4 text-center">
           Submit Your Admission Enquiry Form Now !
         </p>
-        <form onSubmit={handleSubmit} ref={formRef} className="h-full space-y-3">
+        <form
+          onSubmit={handleSubmit}
+          ref={formRef}
+          className="h-full space-y-3"
+        >
           {/* Student Name */}
           <div className="relative group">
             <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 group-focus-within:text-purple-500 transition-colors" />

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
-import popupImage from "@/assets/images/home-popup/evensem25.webp";
+import popupImage from "@/assets/images/home-popup/popup.jpeg";
 
 const SESSION_KEY = "home_admission_popup_seen";
 

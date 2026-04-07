@@ -13,7 +13,7 @@ interface ForAdmissionProps {
 
 const ForAdmission: React.FC<ForAdmissionProps> = ({ data }) => {
   return (
-    <section className="bg-background">
+    <section className="">
       <div className="flex flex-col md:flex-row  gap-10 ">
         {/* 🏫 Left Content Section */}
         <div className="md:w-1/2 text-center md:text-left space-y-4">
@@ -29,7 +29,7 @@ const ForAdmission: React.FC<ForAdmissionProps> = ({ data }) => {
         </div>
 
         {/* 📝 Right Form Section */}
-        <div className="md:w-1/2 w-full bg-card rounded-xl  md:px-8 ">
+        <div className="md:w-1/2 w-full rounded-xl  md:px-8 ">
           <div>
             <Heading title={data.formTitle} size="lg" align="left" />
             <HeadingUnderline width={150} align="left" />

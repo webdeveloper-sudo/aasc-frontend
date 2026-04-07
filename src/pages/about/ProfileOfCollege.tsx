@@ -83,7 +83,7 @@ const ProfileOfCollege: React.FC<ProfileOfCollegeProps> = ({
       <div className="flex flex-col container pt-10">
         <main className="flex-grow">
           {/* HEADER → DYNAMIC */}
-          <section className="bg-secondary border-border">
+          <section className="border-border">
             <div className="text-center">
               <img
                 src={headerLogoUrl}

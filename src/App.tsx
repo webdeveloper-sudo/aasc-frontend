@@ -278,6 +278,9 @@ const App = () => (
                   />
                   <Route path="/circulars" element={<Circular />} />
                 </Routes>
+                
+
+                
                 <Footer />
               </>
             }

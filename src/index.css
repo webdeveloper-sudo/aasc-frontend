@@ -45,7 +45,8 @@
     @apply border-border;
   }
 
-  html, body{
+  html,
+  body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 140px;
@@ -55,19 +56,48 @@
     font-family: "Mona Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
       "Helvetica Neue", Arial, sans-serif;
     font-size: 15px;
+   background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("./assets/images/bg/bg-hat-pattern.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #6B418B;
   }
-  
+
   p {
     color: #333333;
     font-size: 15px;
   }
 
-  hr{
+  hr {
     border-color: #d9d7d7;
   }
-  
+
+}
+
+@layer utilities {
+  .bg-hat-pattern {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("./assets/images/bg/bg-hat-pattern.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+  }
 }

@@ -40,9 +40,9 @@ const Home = () => {
     <>
       <Carousel images={homeData.carousel.images} />
       <NewsTicker items={homeData.newsTicker.items} />
-      <div className="min-h-screen flex flex-col ">
+      <div className="min-h-screen flex flex-col bg-hat-pattern">
         <main className="flex-grow space-y-6">
-          <section className="bg-secondary  py-6 px-8 md:py-12 md:px-0 mt-6 border-border">
+          <section className="  py-6 px-8 md:py-12 md:px-0 mt-6 border-border">
             <div className="text-center">
               <Heading
                 title={homeData.welcome.title}
@@ -75,7 +75,7 @@ const Home = () => {
             <AchievementsStats stats={homeData.stats.items} />
           </section>
 
-          <section className="bg-secondary container py-6 md:py-12 mt-6 border-border">
+          <section className="container py-6 md:py-12 mt-6 border-border">
             <OurCampus data={homeData.campus} />
           </section>
           <hr className=" container" />
@@ -86,7 +86,7 @@ const Home = () => {
 
           <section className="py-6 md:py-12 pb-14 px-6 bg-gray-200">
             {/* <EventsHighlightsPreview events={homeData.events} /> */}
-                <GalleryPreviewSlider />
+            <GalleryPreviewSlider />
           </section>
 
           {/* <section className="">

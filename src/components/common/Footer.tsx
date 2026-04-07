@@ -16,7 +16,8 @@ import Heading from "../reusable/Heading";
 
 const Footer = () => {
   return (
-    <footer className="px-10 mt-10 bg-purple text-white relative border-t border-purple">
+    <div className="pt-10">
+      <footer className="px-10 bg-purple text-white relative border-t border-purple">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -236,6 +237,7 @@ const Footer = () => {
         © 2025 All Rights Reserved | Achariya Arts and Science College
       </div>
     </footer>
+    </div>
   );
 };
 
