@@ -204,7 +204,7 @@ const OurTeamFacultySection: React.FC<OurTeamFacultySectionProps> = ({
                     dep !== "Principal" && dep !== "Vice Principal"
                       ? "Department Faculty"
                       : ""
-                  } ${grouped[dep].length}`}
+                  } `}
             </h2>
             
 

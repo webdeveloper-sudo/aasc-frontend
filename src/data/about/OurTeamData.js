@@ -13,10 +13,10 @@ import englishShalini from "@/assets/images/our-team/faculty/English Dept/Ms. Sh
 import englishKanimozhi from "@/assets/images/our-team/faculty/English Dept/Mrs. Kanimozhi.webp";
 
 // Language Department
-import languageAskarAli from "@/assets/images/our-team/faculty/Language Dept/Dr.Askar Ali. M.webp";
+// import languageAskarAli from "@/assets/images/our-team/faculty/Language Dept/Dr.Askar Ali. M.webp";
 import languageUmamagechavary from "@/assets/images/our-team/faculty/Language Dept/Dr.Umamagechavary. S.webp";
 import languageRajaraman from "@/assets/images/our-team/faculty/Language Dept/Dr. Rajaraman. A.webp";
-import languageSilambarasan from "@/assets/images/our-team/faculty/Language Dept/Dr. Silambarasan. K.webp";
+// import languageSilambarasan from "@/assets/images/our-team/faculty/Language Dept/Dr. Silambarasan. K.webp";
 import languageSenthilKumaran from "@/assets/images/our-team/faculty/Language Dept/Dr. Senthil Kumaran N.webp";
 import languageAravindhan from "@/assets/images/our-team/faculty/Language Dept/Mr. Aravindhan.webp";
 
@@ -90,11 +90,11 @@ import peRajalakshmi from "@/assets/images/our-team/faculty/Physical Education D
 
 // Office Administration
 import adminMathivanan from "@/assets/images/our-team/faculty/Office Administration/Mr.Mathivanan M.webp";
-import adminJayaMadhu from "@/assets/images/our-team/faculty/Office Administration/Mr.Jaya Madhu Mrmohan V.webp";
+// import adminJayaMadhu from "@/assets/images/our-team/faculty/Office Administration/Mr.Jaya Madhu Mrmohan V.webp";
 import adminKasivani from "@/assets/images/our-team/faculty/Office Administration/Mrs. Kasivani S.webp";
 
 // Laboratory Assistants
-import labThirukumaran from "@/assets/images/our-team/faculty/Laboratory Assistants/Mr.Thirukumaran.webp";
+// import labThirukumaran from "@/assets/images/our-team/faculty/Laboratory Assistants/Mr.Thirukumaran.webp";
 import labDharmendra from "@/assets/images/our-team/faculty/Laboratory Assistants/Mr. Dharmendra Pandian.webp";
 import labRaji from "@/assets/images/our-team/faculty/Laboratory Assistants/Mrs.Raji M.webp";
 
@@ -163,13 +163,13 @@ const ourTeamData = {
     },
 
     // DEPARTMENT OF LANGUAGE
-    {
-      name: "Dr. Askar Ali M",
-      designation: "Assistant Professor/HOD",
-      email: "maskarali.aasc@achariya.org",
-      department: "Language",
-      image: languageAskarAli,
-    },
+    // {
+    //   name: "Dr. Askar Ali M",
+    //   designation: "Assistant Professor/HOD",
+    //   email: "maskarali.aasc@achariya.org",
+    //   department: "Language",
+    //   image: languageAskarAli,
+    // },
     {
       name: "Dr. Umamagechavary S",
       designation: "Assistant Professor",
@@ -184,13 +184,13 @@ const ourTeamData = {
       department: "Language",
       image: languageRajaraman,
     },
-    {
-      name: "Dr. Silambarasan K",
-      designation: "Assistant Professor",
-      email: "simbu154987@gmail.com",
-      department: "Language",
-      image: languageSilambarasan,
-    },
+    // {
+    //   name: "Dr. Silambarasan K",
+    //   designation: "Assistant Professor",
+    //   email: "simbu154987@gmail.com",
+    //   department: "Language",
+    //   image: languageSilambarasan,
+    // },
     {
       name: "Dr. Senthil Kumaran N",
       designation: "Assistant Professor/Hindi",
@@ -560,13 +560,13 @@ const ourTeamData = {
       department: "Office Administration",
       image: adminMathivanan,
     },
-    {
-      name: "Mr. Jaya Madhu Mohan V",
-      designation: "Office Superintendent",
-      email: "acaadmin.aasc@achariya.org",
-      department: "Office Administration",
-      image: adminJayaMadhu,
-    },
+    // {
+    //   name: "Mr. Jaya Madhu Mohan V",
+    //   designation: "Office Superintendent",
+    //   email: "acaadmin.aasc@achariya.org",
+    //   department: "Office Administration",
+    //   image: adminJayaMadhu,
+    // },
     {
       name: "Mrs. Kasivani S",
       designation: "Office Superintendent",
@@ -576,13 +576,13 @@ const ourTeamData = {
     },
 
     // LABORATORY ASSISTANTS
-    {
-      name: "Mr. Thirukumaran",
-      designation: "Lab Assistant",
-      email: "bharanivijay16@gmail.com",
-      department: "Laboratory Assistants",
-      image: labThirukumaran,
-    },
+    // {
+    //   name: "Mr. Thirukumaran",
+    //   designation: "Lab Assistant",
+    //   email: "bharanivijay16@gmail.com",
+    //   department: "Laboratory Assistants",
+    //   image: labThirukumaran,
+    // },
     {
       name: "Mr. Dharmendra Pandian",
       designation: "Lab Instructor",
