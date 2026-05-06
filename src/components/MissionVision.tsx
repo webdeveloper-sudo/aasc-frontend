@@ -27,11 +27,9 @@ const MissionVision: React.FC<MissionVisionProps> = ({ overrideData }) => {
   // ✅ CAROUSEL PATTERN: resolveImageUrl for temp files
   const resolveImageUrl = (img: string) => {
     if (!img) return 'https://via.placeholder.com/600x400/f3f4f6/6b7280?text=No+Image';
-    if (img.startsWith('http')) return img;
-    if (img.startsWith('temp_') || !img.includes('/assets/')) {
-      return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
-    }
-    return img;
+    if (img.startsWith("http") || img.includes("assets/")) return img;
+
+    return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
   };
 
   const thumbnailUrl = resolveImageUrl(safeData.image);

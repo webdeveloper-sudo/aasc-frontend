@@ -16,7 +16,7 @@ import Heading from "../reusable/Heading";
 
 const Footer = () => {
   return (
-    <div className="pt-10">
+    <div>
       <footer className="px-10 bg-purple text-white relative border-t border-purple">
       <div
         className="absolute inset-0 opacity-10"
@@ -74,17 +74,23 @@ const Footer = () => {
             <li>
               <Link to="/academics/pg-programs">PG Programme</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/about/chief-mentors-desk">Chief Mentor's Desk</Link>
             </li>
             <li>
               <Link to="/about/principal-desk">Principal Desk</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/campus-life/gallery">Gallery</Link>
             </li>
             <li>
-              <Link to="/about/media-talks">Media Talks</Link>
+              <Link to="/about/library">Library</Link>
+            </li>
+            <li>
+              <Link to="/about/hostel">Hostel</Link>
+            </li>
+            <li>
+              <Link to="/about/rti">RTI</Link>
             </li>
             <li>
               <Link to="/about/press-releases">Press Releases</Link>

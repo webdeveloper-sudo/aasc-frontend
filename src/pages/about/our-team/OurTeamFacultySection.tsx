@@ -118,7 +118,7 @@ const OurTeamFacultySection: React.FC<OurTeamFacultySectionProps> = ({
   }, {});
 
   return (
-    <div className="flex-1 px-6 border-r border-gray-400">
+    <div className="flex-1 px-6 ">
       {/* Filters */}
       <div className="flex flex-col md:flex-row justify-end items-start">
         <div className="flex flex-col md:flex-row  gap-4 mt-4 mb-6">

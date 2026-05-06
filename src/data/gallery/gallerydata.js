@@ -45,8 +45,20 @@ import img44 from "@/assets/images/pongal-2026/pongal-2026image4.webp";
 import img45 from "@/assets/images/pongal-2026/pongal-2026image5.webp";
 import img46 from "@/assets/images/pongal-2026/pongal-2026image6.webp";
 import img47 from "@/assets/images/pongal-2026/pongal-2026image7.webp";
+import img48 from "@/assets/images/gallery/WhatsApp Image 2026-04-21 at 9.47.10 AM.jpeg"
+import img49 from "@/assets/images/gallery/WhatsApp Image 2026-04-21 at 9.47.11 AM.jpeg"
+import img50 from "@/assets/images/gallery/WhatsApp Image 2026-04-21 at 9.47.23 AM.jpeg"
+import img51 from "@/assets/images/carousel/R_RL0618.jpg"
+import img52 from "@/assets/images/carousel/WhatsApp Image 2026-04-21 at 10.34.35 AM.jpeg"
+import img53 from "@/assets/images/carousel/WhatsApp Image 2026-04-21 at 10.34.36 AM.jpeg"
 
 export const galleryData = [
+  { id: 51, src: img51, alt: "Gallery Image 51" },
+  { id: 52, src: img52, alt: "Gallery Image 52" },
+  { id: 53, src: img53, alt: "Gallery Image 53" },
+  { id: 48, src: img48, alt: "Gallery Image 48" },
+  { id: 49, src: img49, alt: "Gallery Image 49" },
+  { id: 50, src: img50, alt: "Gallery Image 50" },
   { id: 41, src: img41, alt: "Gallery Image 41" },
   { id: 42, src: img42, alt: "Gallery Image 42" },
   { id: 43, src: img43, alt: "Gallery Image 43" },

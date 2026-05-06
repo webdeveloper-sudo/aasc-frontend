@@ -17,9 +17,15 @@ import carousel16 from "@/assets/images/pongal-2026/pongal-2026image5.webp";
 import carousel17 from "@/assets/images/pongal-2026/pongal-2026image6.webp";
 import carousel18 from "@/assets/images/carousel/admission pooja1.jpg";
 import carousel19 from "@/assets/images/carousel/job4.jpg";
-
+import carousel20 from "@/assets/images/carousel/R_RL0618.jpg"
+import carousel21 from "@/assets/images/carousel/WhatsApp Image 2026-04-21 at 10.34.35 AM.jpeg"
+import carousel22 from "@/assets/images/carousel/WhatsApp Image 2026-04-21 at 10.34.36 AM.jpeg"
 export const carouselData = {
   images: [
+      carousel20,
+    carousel22,
+    carousel21,
+  
     carousel18,
     carousel19,
     carousel16,

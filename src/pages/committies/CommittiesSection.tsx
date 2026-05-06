@@ -82,7 +82,7 @@ const CommitteeSection: React.FC<CommitteeSectionProps> = ({
     : "Committee";
 
   return (
-    <div className="flex-1 px-6 py-4 border-r border-gray-300">
+    <div className="flex-1 px-6 py-4">
       {/* ===== TOP JUMP MENU ===== */}
       {/* <div className=" mb-6 py-4  sticky md:sticky-none md:top-auto md:text-left text-center top-[130px] bg-white z-[100] md:z-0">
         <Heading title={title} size="md" align="left" />

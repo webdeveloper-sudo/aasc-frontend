@@ -75,7 +75,7 @@ const PressReleasesGallery: React.FC<PressReleasesGalleryProps> = ({
   }, [selectedIndex, formattedImages.length]);
 
   return (
-    <div className="flex-1 p-6 border-r border-gray-400">
+    <div className="flex-1 p-6 bg-background ">
       <h1 className="text-2xl font-bold text-purple text-center md:text-left ">
         {year} Press Releases
       </h1>

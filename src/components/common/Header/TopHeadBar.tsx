@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Import the data list
 import { documentsData } from "@/data/_header/topheaderdata.ts";
 
 const TopHeaderBar: React.FC = () => {
-  const navigate = useNavigate();
 
   
 
@@ -35,7 +34,7 @@ const TopHeaderBar: React.FC = () => {
           </div> */}
 
           {/* ISO Button */}
-          <div className="bg-white border-purple px-2 h-8 flex items-center justify-center">
+          {/* <div className="bg-white border-purple px-2 h-8 flex items-center justify-center">
             <a
               href="https://drive.google.com/file/d/1HCLK31cxAT6GrbTY8Ebpbt07AAqQ5ZH3/view?usp=sharing"
               target="_blank"
@@ -44,6 +43,10 @@ const TopHeaderBar: React.FC = () => {
             >
               ISO
             </a>
+          </div> */}
+
+          <div className="bg-white border-purple px-2 h-8 flex items-center justify-center">
+          <Link to="/about/alumni" className="text-[12px] text-gray-800 font-bold">ALUMNI</Link>
           </div>
 
           {[

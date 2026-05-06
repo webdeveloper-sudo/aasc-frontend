@@ -49,7 +49,7 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
 
       {/* ---------------- SIDEBAR MAIN ---------------- */}
       <aside
-        className={`fixed md:sticky top-0 md:top-[110px] left-0 h-full w-72 border-l border-r border-gray-300 md:h-[calc(100vh-110px)] md:overflow-y-auto bg-white p-4 shadow-xl md:shadow-none transition-transform z-[1000] md:z-0
+        className={`fixed md:sticky top-0 md:top-[110px] left-0 h-full w-72  border-r border-gray-300 md:h-[calc(100vh-110px)] md:overflow-y-auto bg-white p-4 shadow-xl md:shadow-none transition-transform z-[1000] md:z-0
           ${open ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
         `}
       >

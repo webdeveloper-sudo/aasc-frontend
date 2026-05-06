@@ -109,7 +109,7 @@ const AASCBeatsSection: React.FC<AASCBeatsSectionProps> = ({
   }, [selectedEntryIndex, selectedImageIndex, currentImages.length]);
 
   return (
-    <div className="flex-1 p-6 border-r border-gray-300">
+    <div className="flex-1 p-6 ">
       {/* MAIN MONTH TITLE */}
       <h1 className="text-4xl font-bold text-purple text-center">
         AASC Beats {section.sectiontitle}

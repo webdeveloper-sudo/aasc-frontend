@@ -123,7 +123,7 @@ const MediaTalks = () => {
           </section>
 
           {/* Additional Info Section */}
-          <section className="py-8 bg-gray-50 mt-6">
+          <section className="py-8 mt-6">
             <div className="text-center max-w-4xl mx-auto px-4">
               <Heading
                 title="Stay Updated"

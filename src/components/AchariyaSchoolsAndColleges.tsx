@@ -26,14 +26,13 @@ const AchariyaSchoolsAndColleges: React.FC<
   // --------------------------------------------------
   const resolveImageUrl = (img: string) => {
     if (!img) return "";
-    if (img.startsWith("http")) return img;
+    if (img.startsWith("http") || img.includes("assets/")) return img;
 
     // TEMP images only exist in preview
     if (isPreview) {
       return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
     }
 
-    // Public images already resolved by Vite
     return img;
   };
 

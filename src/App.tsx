@@ -63,6 +63,8 @@ import AASCBeats from "./pages/aasc-beats/AASCBeats";
 import LeftRightBorder from "./components/common/LeftRightBorder";
 import PosterCampaign from "./pages/IQAC/bestpractices/PosterCampaign";
 import SpritualityInAASC from "./pages/IQAC/bestpractices/SpritualityInAASC";
+import Alumni from "./pages/about/Alumni";
+import UnderConstruction from "./components/common/UnderConstruction";
 
 const queryClient = new QueryClient();
 
@@ -115,7 +117,43 @@ const App = () => (
                   />
 
                   <Route path="/about/media-talks" element={<MediaTalks />} />
+                  <Route path="/about/library" element={<Library />} />
+                  <Route path="/about/hostel" element={<Hostel />} />
+                  <Route path="/about/rti" element={<UnderConstruction />} />
+                  <Route path="/about/alumni" element={<Alumni />} />
                   {/* Academic Pages START*/}
+                  <Route
+                    path="/academics/admission-policy"
+                    element={<UnderConstruction />}
+                  />
+                  <Route
+                    path="/academics/eligible-criteria"
+                    element={<UnderConstruction />}
+                  />
+                  <Route
+                    path="/academics/academic-calendar"
+                    element={<AcademicCalendar />}
+                  />
+                  <Route
+                    path="/academics/ug-programmes"
+                    element={
+                      <Navigate to="/academics/ug-programmes/existing" replace />
+                    }
+                  />
+                  <Route
+                    path="/academics/ug-programmes/:programType"
+                    element={<UGPrograms />}
+                  />
+                  <Route
+                    path="/academics/pg-programmes"
+                    element={
+                      <Navigate to="/academics/pg-programmes/existing" replace />
+                    }
+                  />
+                  <Route
+                    path="/academics/pg-programmes/:programType"
+                    element={<PGPrograms />}
+                  />
                   <Route
                     path="/academics/departments"
                     element={
@@ -132,32 +170,20 @@ const App = () => (
                     element={<AcademicDepartments />}
                   />
                   <Route
-                    path="/academics/ug-programs"
-                    element={
-                      <Navigate to="/academics/ug-programs/existing" replace />
-                    }
-                  />
-                  <Route
-                    path="/academics/ug-programs/:programType"
-                    element={<UGPrograms />}
-                  />
-                  <Route
-                    path="/academics/pg-programs"
-                    element={
-                      <Navigate to="/academics/pg-programs/existing" replace />
-                    }
-                  />
-                  <Route
-                    path="/academics/pg-programs/:programType"
-                    element={<PGPrograms />}
-                  />
-                  <Route
-                    path="/academics/academic-calendar"
-                    element={<AcademicCalendar />}
-                  />
-                  <Route
                     path="/academics/prospectus"
                     element={<Prospectus />}
+                  />
+                  <Route
+                    path="/academics/vac-add-on-courses"
+                    element={<UnderConstruction />}
+                  />
+                  <Route
+                    path="/academics/certificate-courses"
+                    element={<UnderConstruction />}
+                  />
+                  <Route
+                    path="/academics/swayam-mooc-courses"
+                    element={<UnderConstruction />}
                   />
                   {/* Academic Pages END*/}
                   {/* FACILITIES Pages START*/}
@@ -231,6 +257,10 @@ const App = () => (
                     {/* Gallery Pages START */}
                   <Route path="/campus-life/gallery" element={<Gallery />} />
                   {/* Gallery Pages END */}
+                  <Route
+                    path="/campus-life/extension-activities/yrc"
+                    element={<UnderConstruction />}
+                  />
                   {/* Campus Life pages END*/}
                   {/* IQAC & NIRF Pages START */}
                   <Route
@@ -268,8 +298,30 @@ const App = () => (
                   <Route path="/aasc-beats" element={<AASCBeats />} />
                   <Route path="/aasc-beats/:month" element={<AASCBeats />} />
                   {/*  AASC Beats Pages END */}
+                  
+                  {/* Home Tabs Routes START */}
+                  <Route path="/research" element={<UnderConstruction />} />
+                  <Route path="/research/publications" element={<UnderConstruction />} />
+                  <Route path="/research/seminars" element={<UnderConstruction />} />
+                  <Route path="/research/workshops" element={<UnderConstruction />} />
+                  <Route path="/research/conferences" element={<UnderConstruction />} />
+                  <Route path="/research/symposium" element={<UnderConstruction />} />
+                  
+                  <Route path="/placements-home" element={<UnderConstruction />} />
+                  <Route path="/mou" element={<UnderConstruction />} />
+                  <Route path="/attainment" element={<UnderConstruction />} />
+                  <Route path="/gold-medalists" element={<UnderConstruction />} />
+                  <Route path="/policy" element={<UnderConstruction />} />
+                  
+                  <Route path="/ipr" element={<UnderConstruction />} />
+                  <Route path="/ipr/start-ups" element={<UnderConstruction />} />
+                  <Route path="/ipr/patents" element={<UnderConstruction />} />
+                  
+                  <Route path="/feedback" element={<UnderConstruction />} />
+                  <Route path="/gender-equality" element={<UnderConstruction />} />
+                  <Route path="/sports-home" element={<UnderConstruction />} />
+                  {/* Home Tabs Routes END */}
 
-                
                   {/* 404 error */}
                   <Route path="*" element={<NotFound />} />
                   <Route

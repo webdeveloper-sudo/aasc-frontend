@@ -74,11 +74,16 @@ const Navbar = () => {
       label: "Academics",
       path: "/academics",
       dropdown: [
-        { label: "UG Programme", path: "/academics/ug-programs" },
-        { label: "PG Programme", path: "/academics/pg-programs" },
-        { label: "Departments", path: "/academics/departments" },
+        { label: "Admission Policy", path: "/academics/admission-policy" },
+        { label: "Eligible Criteria", path: "/academics/eligible-criteria" },
         { label: "Academic Calendar", path: "/academics/academic-calendar" },
+        { label: "UG Programmes", path: "/academics/ug-programmes" },
+        { label: "PG Programmes", path: "/academics/pg-programmes" },
+        { label: "Departments", path: "/academics/departments" },
         { label: "Prospectus", path: "/academics/prospectus" },
+        { label: "VAC / Add-on Courses", path: "/academics/vac-add-on-courses" },
+        { label: "Certificate Courses", path: "/academics/certificate-courses" },
+        { label: "SWAYAM / MOOC Courses", path: "/academics/swayam-mooc-courses" },
       ],
     },
 
@@ -103,15 +108,30 @@ const Navbar = () => {
       label: "Campus Life",
       path: "/campus-life",
       dropdown: [
-        // { label: "SEED", path: "/campus-life/seed" },
         { label: "Gallery", path: "/campus-life/gallery" },
         {
           label: "Value-Added Courses",
           path: "/campus-life/value-added-courses",
         },
-        // { label: "Department Clubs", path: "/campus-life/department-clubs" },
-        // { label: "Cultural", path: "/campus-life/cultural" },
         { label: "Sports", path: "/campus-life/sports" },
+        {
+          label: "Extension Activities",
+          path: "/campus-life/extension-activities",
+          submenu: [
+            { label: "NSS", path: "/cells/nss" },
+            { label: "RRC", path: "/clubs/rrc" },
+            { label: "YRC", path: "/campus-life/extension-activities/yrc" },
+          ],
+        },
+        {
+          label: "Clubs",
+          path: "/campus-life/clubs",
+          submenu: [
+            { label: "RRC", path: "/clubs/rrc" },
+            { label: "Womens Club", path: "/clubs/womens-club" },
+            { label: "Achariya Code Club", path: "/clubs/code-club" },
+          ],
+        },
       ],
     },
 
@@ -163,8 +183,11 @@ const Navbar = () => {
 
       <div className="hidden md:block sticky top-0 z-[200] bg-white shadow-lg">
         <TopHeaderBar />
-        <nav className="flex items-center justify-between p-3 ps-5 bg-purple">
-          <div className="flex items-center gap-2">
+        <nav className="relative flex items-center justify-between p-3 ps-5 bg-purple">
+          {/* Shimmer Effect Layer */}
+          <div className="absolute inset-0 shimmer-effect pointer-events-none"></div>
+          <div className="relative z-10 flex items-center justify-between w-full">
+            <div className="flex items-center gap-2">
             <Link to="/">
               <img src={AASCLOGO} width={120} className="bg-white p-2" />
             </Link>
@@ -185,12 +208,12 @@ const Navbar = () => {
             {navItems.map((item, idx) => (
               <li
                 key={idx}
-                className="relative group"
+                className="relative group uppercase text-[13px] font-semibold"
                 onMouseEnter={() => setOpenDropdown(item.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 {/* MAIN ITEM */}
-                <div className="relative text-white text-[15px] py-4 px-3 cursor-pointer hover:bg-white/10 flex items-center gap-1 group">
+                <div className="relative text-white text-[13px] py-4 px-3 cursor-pointer hover:bg-white/10 flex items-center gap-1 group">
                   {item.dropdown ? (
                     // 🚫 Not Clickable Label
                     <span className="pointer-events-none">{item.label}</span>
@@ -219,7 +242,7 @@ const Navbar = () => {
                         <li key={i} className="relative group/submenu">
                           <Link
                             to={sub.path}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple/10 hover:text-purple rounded transition"
+                            className="block px-4 py-2 text-[12px] text-gray-600 hover:bg-purple/10 hover:text-purple rounded transition"
                           >
                             {sub.label}
                           </Link>
@@ -287,6 +310,7 @@ const Navbar = () => {
               <img className="ms-3" src={AchariyaLOGO} width={65} />
             </li>
           </ul>
+          </div>
         </nav>
       </div>
 
@@ -296,8 +320,11 @@ const Navbar = () => {
           <TopHeaderBar />
         </div>
 
-        <div className="bg-purple fixed top-[55px] left-0 right-0 z-[300] p-3 flex justify-between items-center">
-          <div className="flex items-center gap-2">
+        <div className="bg-purple fixed top-[55px] left-0 right-0 z-[300] p-3 flex justify-between items-center overflow-hidden">
+           {/* Shimmer Effect Layer */}
+           <div className="absolute inset-0 shimmer-effect pointer-events-none"></div>
+           <div className="relative z-10 flex justify-between items-center w-full">
+            <div className="flex items-center gap-2">
             <Link to="/">
               <img src={AASCLOGO} width={100} className="bg-white p-2" />
             </Link>
@@ -318,6 +345,7 @@ const Navbar = () => {
           <button id="hamburgerBtn" onClick={() => setMobileOpen(true)}>
             <Menu size={28} className="text-white" />
           </button>
+          </div>
         </div>
       </div>
 
