@@ -1,13 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "../ui/textarea";
 import ugprogramsdatadetails from "@/data/academics/ugprogramsdatadetails.js";
 import pgprogramsdatadetails from "@/data/academics/pgprogrammsdetails.js";
@@ -17,14 +10,13 @@ import {
   Mail,
   User,
   User2,
-  MessageCircle,
   Loader2,
   GraduationCap,
 } from "lucide-react";
 
 // ⭐ Google Sheets Web App URL
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwD5Yno522kTok2SnDibHATHTrL8d4lPownZJFuMLm0YSZ1HUnpbK4vAukqRiVsR_D9/exec";
+  "https://script.google.com/macros/s/AKfycbw3E_r-JrhWf-URT37lf0YOUOF_3Yf1XZwzi6BVG-TMJ_DIY-i9UhrZHd7Wy-GjmNA/exec";
 
 const ForAdmissionForm = () => {
   const [showSuccess, setShowSuccess] = useState(false);
