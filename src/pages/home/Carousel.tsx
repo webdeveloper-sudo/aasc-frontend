@@ -6,6 +6,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // Static data import (like profileOfCollegeData)
 import carouselData from "@/data/home/carouseldata";
 
+import { resolveImageUrl } from "@/utils/imageUtils";
+
 interface CarouselProps {
   overrideData?: {
     images: string[];
@@ -16,13 +18,13 @@ const Carousel: React.FC<CarouselProps> = ({ overrideData }) => {
   // 🔥 ALWAYS STATIC for public pages (like ProfileOfCollege banner)
   const staticImages = carouselData.images;
 
-  // 🔥 DYNAMIC = overrideData ONLY in preview, static otherwise
+  // 🔥 DYNAMIC = overrideData ONLY if it has images, static otherwise
   const staticData = { images: staticImages };
-  const dynamicData = overrideData || staticData;
+  
+  // Only use overrideData if it's an object and has a non-empty images array
+  const hasOverrideImages = overrideData && Array.isArray(overrideData.images) && overrideData.images.length > 0;
+  const dynamicData = hasOverrideImages ? overrideData : staticData;
   const { images: displayImages } = dynamicData;
-
-  // Detect admin live preview mode
-  const isPreview = Boolean(overrideData);
 
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -33,14 +35,14 @@ const Carousel: React.FC<CarouselProps> = ({ overrideData }) => {
   }, [displayImages]);
 
   useEffect(() => {
-    if (displayImages.length === 0) return;
+    if (!displayImages || displayImages.length === 0) return;
 
     const interval = setInterval(() => {
       setDirection(1);
       setCurrent((prev) => (prev === displayImages.length - 1 ? 0 : prev + 1));
     }, 5000);
     return () => clearInterval(interval);
-  }, [displayImages.length]);
+  }, [displayImages?.length]);
 
   const nextSlide = () => {
     setDirection(1);
@@ -62,19 +64,6 @@ const Carousel: React.FC<CarouselProps> = ({ overrideData }) => {
     }),
   };
 
-  // Universal image URL resolver (like ProfileOfCollege)
-  function resolveImageUrl(img: string) {
-    if (!img) return "";
-    if (img.startsWith("http://") || img.startsWith("https://")) {
-      return img;
-    }
-    // Temp file in preview
-    if (!img.includes("/assets/images/")) {
-      return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
-    }
-    return img;
-  }
-
   if (!displayImages || displayImages.length === 0) {
     return (
       <div className="w-full h-[50vh] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] bg-gray-100 flex items-center justify-center rounded-lg">
@@ -89,11 +78,7 @@ const Carousel: React.FC<CarouselProps> = ({ overrideData }) => {
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
             key={current}
-            src={
-              isPreview
-                ? resolveImageUrl(displayImages[current])
-                : displayImages[current]
-            }
+            src={resolveImageUrl(displayImages[current])}
             alt={`Slide ${current + 1}`}
             custom={direction}
             variants={slideVariants as any}

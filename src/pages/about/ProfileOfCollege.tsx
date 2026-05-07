@@ -1,4 +1,5 @@
 import BannerAndBreadCrumb from "@/components/BannerAndBreadCrumb";
+import { resolveImageUrl } from "@/utils/imageUtils";
 import { profileOfCollegeData } from "@/data/about/profileofcollegedata";
 import Heading from "@/components/reusable/Heading";
 
@@ -38,29 +39,8 @@ const ProfileOfCollege: React.FC<ProfileOfCollegeProps> = ({
   // detect admin live preview mode
   const isPreview = Boolean(overrideData);
 
-  // ----------------------------------------------------
-  // UNIVERSAL IMAGE URL RESOLVER (for header logo only)
-  // ----------------------------------------------------
-  function resolveImageUrl(img: string) {
-    if (!img) return "";
-
-    // CASE 1 — Already full URL (after save)
-    if (img.startsWith("http://") || img.startsWith("https://")) {
-      return img;
-    }
-
-    // CASE 2 — Temp file (filename only)
-    // e.g. "123123-image.png"
-    if (!img.includes("/assets/images/")) {
-      return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
-    }
-
-    // CASE 3 — A backend-built final path already
-    return img;
-  }
-
   // RESOLVED IMAGE URLS
-  const headerLogoUrl = isPreview ? resolveImageUrl(header.logo) : header.logo;
+  const headerLogoUrl = resolveImageUrl(header.logo);
 
   // BANNER IMAGE → ALWAYS STATIC (never dynamic)
   const bannerImageUrl = banner.image;

@@ -7,6 +7,7 @@ import ScrollDownToPreview from "../../components/ScrollDownToPreview";
 import { AlertCircle, X, Trash2, Plus, Image as ImageIcon } from "lucide-react";
 import PreviewWrapper from "@/admin/PreviewWrapper";
 import Carousel from "@/pages/home/Carousel";
+import { resolveImageUrl } from "@/utils/imageUtils";
 
 /* ================= TYPES ================= */
 interface CarouselData {
@@ -99,16 +100,6 @@ const ExistingImageCard: React.FC<{
   onDelete: (index: number) => void;
 }> = ({ image, index, onDelete }) => {
   const [imageError, setImageError] = useState(false);
-
-  // Helper to resolve image URL
-  const resolveImageUrl = (img: string) => {
-    if (!img) return "";
-    if (img.startsWith("http://") || img.startsWith("https://")) return img;
-    if (!img.includes("/assets/images/")) {
-      return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
-    }
-    return img;
-  };
 
   const imageUrl = resolveImageUrl(image);
 

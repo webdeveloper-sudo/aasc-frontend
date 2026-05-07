@@ -47,13 +47,13 @@ const PrincipalDesk: React.FC<PrincipalDeskProps> = ({ overrideData }) => {
       return img;
     }
 
-    // If temp upload: filename only
-    if (!img.includes("/assets/images/")) {
-      return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
+    // CASE 2 — Bundled asset (already resolved)
+    if (img.startsWith("/") || img.includes("assets/")) {
+      return img;
     }
 
-    // Already a complete relative asset path
-    return img;
+    // CASE 3 — Temp file (filename only)
+    return `${import.meta.env.VITE_API_URL}/assets/images/temp/${img}`;
   }
 
   // Final image used in UI
