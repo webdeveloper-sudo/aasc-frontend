@@ -386,7 +386,7 @@ const ProspectusDataManager: React.FC = () => {
       <div className="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
         <div className="flex justify-between items-start mb-4 gap-4">
           <div className="flex items-center gap-3 flex-1">
-            <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-full bg-[#03016A]/10 flex items-center justify-center flex-shrink-0">
               <FileText size={24} className="text-purple-600" />
             </div>
             <div>

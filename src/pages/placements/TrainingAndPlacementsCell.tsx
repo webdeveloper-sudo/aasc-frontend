@@ -148,7 +148,7 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Play className="w-8 h-8 text-purple-700" />
+                  <Play className="w-8 h-8 text-purple/80" />
                 </motion.button>
               </div>
             </div>
@@ -262,7 +262,7 @@ const TrainingAndPlacementsCell: React.FC<TrainingAndPlacementsCellProps> = ({
                     className="flex gap-3 text-justify text-left"
                   >
                     <div className="w-5 h-5 flex items-start justify-center pt-1">
-                      <GraduationCap className="w-4 h-4 text-purple-700" />
+                      <GraduationCap className="w-4 h-4 text-purple/80" />
                     </div>
                     <span>{item.text}</span>
                   </li>

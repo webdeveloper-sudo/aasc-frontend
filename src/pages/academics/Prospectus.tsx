@@ -82,7 +82,7 @@ const Prospectus: React.FC<ProspectusProps> = ({ overrideData }) => {
                   ${
                     selectedItem.year === item.year
                       ? "bg-purple text-white"
-                      : "bg-purple-100 text-gray-700 hover:bg-purple hover:text-white"
+                      : "bg-[#03016A]/10 text-gray-700 hover:bg-purple hover:text-white"
                   }
                 `}
               >
@@ -107,7 +107,7 @@ const Prospectus: React.FC<ProspectusProps> = ({ overrideData }) => {
         {/* PDF PREVIEW */}
         <div className="w-full mx-auto bg-white shadow-md rounded-xl md:p-10 space-y-8">
           <div className="flex items-center justify-center gap-2">
-            <FileTextIcon className="w-7 h-7 text-purple-700" />
+            <FileTextIcon className="w-7 h-7 text-purple/80" />
             <h3 className="text-xl font-semibold">{selectedItem.year}</h3>
           </div>
 

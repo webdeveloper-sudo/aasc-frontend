@@ -38,7 +38,7 @@ const DataTable = () => {
           <h2 className="text-xl font-bold capitalize">{entity}</h2>
           <Link
             to="new"
-            className="bg-purple-600 text-white px-4 py-2 rounded flex items-center gap-2 hover:bg-purple-700"
+            className="bg-purple/80 text-white px-4 py-2 rounded flex items-center gap-2 hover:bg-purple/80"
           >
             <Plus size={18} /> Add New
           </Link>
@@ -73,7 +73,7 @@ const DataTable = () => {
         <h2 className="text-xl font-bold capitalize">{entity}</h2>
         <Link
           to="new"
-          className="bg-purple-600 text-white px-4 py-2 rounded flex items-center gap-2 hover:bg-purple-700"
+          className="bg-purple/80 text-white px-4 py-2 rounded flex items-center gap-2 hover:bg-purple/80"
         >
           <Plus size={18} /> Add New
         </Link>

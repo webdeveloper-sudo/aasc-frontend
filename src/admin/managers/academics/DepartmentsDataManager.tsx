@@ -694,7 +694,7 @@ const DepartmentsDataManager: React.FC = () => {
               <p className="text-gray-700 text-3xl font-semibold">
                 {selectedDepartment.departmentActivities?.length || 0}
               </p>
-              <p className="text-sm text-purple-700 mt-2 font-medium">
+              <p className="text-sm text-purple/80 mt-2 font-medium">
                 Click to manage →
               </p>
             </div>

@@ -38,7 +38,7 @@ const IQACSection: React.FC<IQACSectionProps> = ({ activeTab, hideBanner = false
                     {iqacInfo.map((item: any) => (
                       <li key={item.id} className="flex text-start gap-3">
                         <div className="w-5 h-5 flex items-start justify-center pt-1">
-                          <GraduationCap className="w-4 h-4 text-purple-700" />
+                          <GraduationCap className="w-4 h-4 text-purple/80" />
                         </div>
                         <span className="text-justify">{item.text}</span>
                       </li>
@@ -136,7 +136,7 @@ const IQACSection: React.FC<IQACSectionProps> = ({ activeTab, hideBanner = false
                     ].map((text, idx) => (
                       <li key={idx} className="flex text-start gap-3">
                         <div className="w-5 h-5 flex items-start justify-center pt-1">
-                          <GraduationCap className="w-4 h-4 text-purple-700" />
+                          <GraduationCap className="w-4 h-4 text-purple/80" />
                         </div>
                         <span className="text-justify">{text}</span>
                       </li>
@@ -205,7 +205,7 @@ const IQACSection: React.FC<IQACSectionProps> = ({ activeTab, hideBanner = false
                       <div className="pt-4">
                         <Link
                           to="/"
-                          className="inline-flex items-center gap-3 bg-purple hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl uppercase tracking-wider text-sm"
+                          className="inline-flex items-center gap-3 bg-purple hover:bg-purple/80 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl uppercase tracking-wider text-sm"
                         >
                           <Home className="w-5 h-5" />
                           Return to Homepage

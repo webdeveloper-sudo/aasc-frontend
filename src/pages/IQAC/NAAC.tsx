@@ -62,7 +62,7 @@ const NAAC = () => {
               {naacInfo.map((item) => (
                 <li key={item.id} className="flex text-start gap-3">
                   <div className="w-5 h-5 flex items-start justify-center pt-1">
-                    <GraduationCap className="w-4 h-4 text-purple-700" />
+                    <GraduationCap className="w-4 h-4 text-purple/80" />
                   </div>
                   <span>{item.text}</span>
                 </li>

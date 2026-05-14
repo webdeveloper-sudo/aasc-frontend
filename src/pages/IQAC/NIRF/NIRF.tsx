@@ -36,7 +36,7 @@ const NIRF = () => {
               {nirfInfo.map((item) => (
                 <li key={item.id} className="flex text-start gap-3">
                   <div className="w-5 h-5 flex items-start justify-center pt-1">
-                    <GraduationCap className="w-4 h-4 text-purple-700" />
+                    <GraduationCap className="w-4 h-4 text-purple/80" />
                   </div>
                   <span className="text-justify">{item.text}</span>
                 </li>
@@ -48,7 +48,7 @@ const NIRF = () => {
                 {nirfdoc.map((doc, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <div className="w-7 h-7  flex items-center justify-center">
-                      <FileText className="w-7 h-7 border rounded-full p-1 text-purple-700" />
+                      <FileText className="w-7 h-7 border rounded-full p-1 text-purple/80" />
                     </div>
 
                     <a
@@ -60,7 +60,7 @@ const NIRF = () => {
                       {doc.label}
                     </a>
                     <div className="w-5 h-5 flex items-center justify-center">
-                      <MoveRight className="w-5 h-5 p-1 text-purple-700" />
+                      <MoveRight className="w-5 h-5 p-1 text-purple/80" />
                     </div>
                   </li>
                 ))}

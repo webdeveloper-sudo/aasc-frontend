@@ -20,8 +20,11 @@
     --black: 0 0% 15%;
     --black-foreground: 0 0% 95%;
 
-    --purple: 280 35% 32%;
-    --purple-foreground: 0 0% 100%;
+    /* --purple: 280 35% 32%;
+    --purple-foreground: 0 0% 100%; */
+
+    --purple: 241 97% 21%;
+--purple-foreground: 0 0% 100%;
 
     --red: 353 84% 52%;
     --red-foreground: 0 0% 100%;
@@ -73,7 +76,7 @@
   h4,
   h5,
   h6 {
-    color: #6B418B;
+    color: #03016A;
   }
 
   p {

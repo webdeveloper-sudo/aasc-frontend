@@ -62,7 +62,7 @@ const UnderConstruction = ({ hideBanner = false }: { hideBanner?: boolean }) => 
           <div className="pt-4">
             <Link
               to="/"
-              className="inline-flex items-center gap-3 bg-purple hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl uppercase tracking-wider text-sm"
+              className="inline-flex items-center gap-3 bg-purple hover:bg-purple/80 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl uppercase tracking-wider text-sm"
             >
               <Home className="w-5 h-5" />
               Return to Homepage

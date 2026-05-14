@@ -77,8 +77,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                     }}
                     className={`block w-full text-left px-3 py-2 rounded-md transition ${
                       item.isActive
-                        ? "bg-purple-100 text-black"
-                        : "hover:bg-purple-100 hover:text-black"
+                        ? "bg-[#03016A]/10 text-black"
+                        : "hover:bg-[#03016A]/10 hover:text-black"
                     }`}
                   >
                     {item.title || item.label}
@@ -90,8 +90,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                     className={({ isActive }) =>
                       `block px-3 py-2 rounded-md transition ${
                         isActive || item.isActive
-                          ? "bg-purple-100 text-black"
-                          : "hover:bg-purple-100 hover:text-black"
+                          ? "bg-[#03016A]/10 text-black"
+                          : "hover:bg-[#03016A]/10 hover:text-black"
                       }`
                     }
                   >
@@ -120,8 +120,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                     }
                     className={`w-full flex justify-between items-center px-3 py-2 rounded-md transition font-medium ${
                       activeMain === (main.id || main.key)
-                        ? "bg-purple-100"
-                        : "hover:bg-purple-100"
+                        ? "bg-[#03016A]/10"
+                        : "hover:bg-[#03016A]/10"
                     }`}
                   >
                     {main.label || main.title}
@@ -153,8 +153,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                                           }}
                                           className={`block w-full text-left px-3 py-2 text-sm flex items-center gap-2 rounded-md transition ${
                                             child.isActive
-                                              ? "bg-purple-100"
-                                              : "hover:bg-purple-100"
+                                              ? "bg-[#03016A]/10"
+                                              : "hover:bg-[#03016A]/10"
                                           }`}
                                         >
                                           <ChevronRight className="w-4 h-4" />
@@ -166,8 +166,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                                           onClick={() => setOpen(false)}
                                           className={`block px-3 py-2 text-sm flex items-center gap-2 rounded-md transition ${
                                             slug === childSlug || child.isActive
-                                              ? "bg-purple-100"
-                                              : "hover:bg-purple-100"
+                                              ? "bg-[#03016A]/10"
+                                              : "hover:bg-[#03016A]/10"
                                           }`}
                                         >
                                           <ChevronRight className="w-4 h-4" />
@@ -189,8 +189,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                                     }}
                                     className={`block w-full text-left px-3 py-2 gap-2 rounded-md flex items-center transition ${
                                       sub.isActive
-                                        ? "bg-purple-100"
-                                        : "hover:bg-purple-100"
+                                        ? "bg-[#03016A]/10"
+                                        : "hover:bg-[#03016A]/10"
                                     }`}
                                   >
                                     <ChevronRight className="w-4 h-4" />
@@ -203,8 +203,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                                     className={`block px-3 py-2 gap-2 rounded-md flex items-center transition ${
                                       location.pathname === sub.url ||
                                       sub.isActive
-                                        ? "bg-purple-100"
-                                        : "hover:bg-purple-100"
+                                        ? "bg-[#03016A]/10"
+                                        : "hover:bg-[#03016A]/10"
                                     }`}
                                   >
                                     <ChevronRight className="w-4 h-4" />
@@ -241,8 +241,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                     }}
                     className={`block w-full text-left px-3 py-2 rounded-md transition ${
                       item.isActive
-                        ? "bg-purple-100 text-black"
-                        : "hover:bg-purple-100 hover:text-black"
+                        ? "bg-[#03016A]/10 text-black"
+                        : "hover:bg-[#03016A]/10 hover:text-black"
                     }`}
                   >
                     {item.title || item.label}
@@ -254,8 +254,8 @@ const GlobalSidebar = ({ title, menu = [], type = "simple" }) => {
                     className={({ isActive }) =>
                       `block px-3 py-2 rounded-md transition ${
                         isActive || item.isActive
-                          ? "bg-purple-100 text-black"
-                          : "hover:bg-purple-100 hover:text-black"
+                          ? "bg-[#03016A]/10 text-black"
+                          : "hover:bg-[#03016A]/10 hover:text-black"
                       }`
                     }
                   >

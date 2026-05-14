@@ -135,7 +135,7 @@ const OurTeamFacultySection: React.FC<OurTeamFacultySectionProps> = ({
               {/* Button (Does NOT clear the value anymore) */}
               <button
                 onClick={() => setDepartmentFilterOpen((prev) => !prev)}
-                className="w-full px-3 py-2 border border-gray-400 rounded-lg bg-white text-left text-gray-700 capitalize hover:bg-purple/10 hover:text-purple-700 transition-all flex items-center justify-between"
+                className="w-full px-3 py-2 border border-gray-400 rounded-lg bg-white text-left text-gray-700 capitalize hover:bg-purple/10 hover:text-purple/80 transition-all flex items-center justify-between"
               >
                 <span>{departmentFilter || "All Departments"}</span>
 
@@ -153,7 +153,7 @@ const OurTeamFacultySection: React.FC<OurTeamFacultySectionProps> = ({
                         setDepartmentFilter("");
                         setDepartmentFilterOpen(false);
                       }}
-                      className="px-4 py-2 text-gray-700 capitalize text-[13px] hover:bg-purple/10 hover:text-purple-700 transition-all cursor-pointer"
+                      className="px-4 py-2 text-gray-700 capitalize text-[13px] hover:bg-purple/10 hover:text-[#03016A] transition-all cursor-pointer"
                     >
                       All Departments
                     </li>
@@ -168,7 +168,7 @@ const OurTeamFacultySection: React.FC<OurTeamFacultySectionProps> = ({
                             setDepartmentFilter(dep);
                             setDepartmentFilterOpen(false);
                           }}
-                          className="px-4 py-2 text-gray-700 capitalize text-[13px] hover:bg-purple/10 hover:text-purple-700 transition-all cursor-pointer"
+                          className="px-4 py-2 text-gray-700 capitalize text-[13px] hover:bg-purple/10 hover:text-[#03016A] transition-all cursor-pointer"
                         >
                           {dep}
                         </div>

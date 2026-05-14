@@ -90,7 +90,7 @@ const InputModal: React.FC<InputModalProps> = ({
             <button
               onClick={handleConfirm}
               disabled={!value.trim()}
-              className="flex-1 px-4 py-2.5 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-lg transition-all font-medium shadow-sm hover:shadow-md"
+              className="flex-1 px-4 py-2.5 bg-purple/80 hover:bg-purple/80 disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-lg transition-all font-medium shadow-sm hover:shadow-md"
             >
               {confirmText}
             </button>

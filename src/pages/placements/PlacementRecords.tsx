@@ -91,7 +91,7 @@ const PlacementRecords: React.FC<PlacementRecordsProps> = ({
                 flex flex-col items-center justify-center gap-2
               "
               >
-                <FileText className="w-6 h-6 text-purple-700" />
+                <FileText className="w-6 h-6 text-purple/80" />
 
                 <span className="font-medium text-gray-700">
                   {item.data.label}

@@ -117,7 +117,7 @@ const AchievementsStats: React.FC<AchievementsStatsProps> = ({
 
               {/* Dynamic numbers */}
               <motion.p
-                className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#16611C] text-center flex  items-center"
+                className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple text-center flex  items-center"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 200 }}
               >

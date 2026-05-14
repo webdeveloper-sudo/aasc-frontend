@@ -118,7 +118,7 @@ const CommitteeSection: React.FC<CommitteeSectionProps> = ({
               <ul className="space-y-3">
                 {objectives.map((item) => (
                   <li key={item.id} className="flex gap-3">
-                    <GraduationCap className="w-5 h-5 text-purple-700 mt-1 flex-shrink-0" />
+                    <GraduationCap className="w-5 h-5 text-purple/80 mt-1 flex-shrink-0" />
                     <span>{item.text}</span>
                   </li>
                 ))}
@@ -160,7 +160,7 @@ const CommitteeSection: React.FC<CommitteeSectionProps> = ({
                         <Mail size={16} />
                         <a
                           href={`mailto:${m.email}`}
-                          className="hover:text-purple-700 hover:underline"
+                          className="hover:text-purple/80 hover:underline"
                         >
                           {m.email}
                         </a>
@@ -178,7 +178,7 @@ const CommitteeSection: React.FC<CommitteeSectionProps> = ({
                         <Mail size={17} />
                         <a
                           href={`mailto:${m.email}`}
-                          className="hover:text-purple-700 hover:underline"
+                          className="hover:text-purple/80 hover:underline"
                         >
                           {m.email}
                         </a>
@@ -197,7 +197,7 @@ const CommitteeSection: React.FC<CommitteeSectionProps> = ({
               <HeadingUnderline width={120} align="left" />
               <ul className="space-y-4">
                 {circulars.map((c, idx) => (
-                  <li key={c.id || idx} className="flex gap-3 text-purple-700">
+                  <li key={c.id || idx} className="flex gap-3 text-purple/80">
                     <FileText size={20} className="flex-shrink-0 mt-1" />
                     <a
                       href={isPreview ? resolveFileUrl(c.file) : c.file}

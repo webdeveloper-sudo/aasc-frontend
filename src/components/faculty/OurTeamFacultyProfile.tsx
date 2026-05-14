@@ -28,7 +28,7 @@ const OurTeamFacultyProfile = ({
 
         {/* MIDDLE — INFO (2/3 mobile) */}
         <div className="flex flex-col justify-center text-left px-4 gap-1 col-span-2 md:col-span-1 md:border-r border-gray-300 pb-4 md:pb-0">
-          <h4 className="md:text-xl text-md font-semibold">{name}</h4>
+          <h4 className="md:text-xl text-md font-semibold text-[#03016A]">{name}</h4>
 
           {department ? (
             <p className="text-sm font-semibold text-gray-600">{department}</p>

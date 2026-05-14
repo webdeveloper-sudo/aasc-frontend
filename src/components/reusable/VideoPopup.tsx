@@ -54,7 +54,7 @@ const VideoPopup = ({ thumbnail, videoUrl }) => {
           whileTap={{ scale: 0.95 }}
         >
           <div className="bg-white/90 p-5 rounded-full shadow-lg">
-            <Play className="w-10 h-10 text-purple-700" />
+            <Play className="w-10 h-10 text-[#03016A]" />
           </div>
         </motion.button>
       </div>
@@ -96,7 +96,7 @@ const VideoPopup = ({ thumbnail, videoUrl }) => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Play className="w-10 h-10 text-purple-700" />
+                    <Play className="w-10 h-10 text-purple/80" />
                   </motion.button>
                 </div>
               )}
